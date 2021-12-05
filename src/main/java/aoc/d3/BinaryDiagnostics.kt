@@ -26,12 +26,15 @@ fun main() {
     val readings = readFile()
     //hardocding this from 0-11 but it can also be inferred from the file
     val gammaBits  = (0..11).map { i ->
+        //count how many have '1' in the 'i'th place
         val ones = readings.count { j -> j[i] == '1' }
+        //set the bit
         if (ones > readings.size / 2) '1' else '0'
     }
 
     println(gammaBits)
 
+    //epsilon is just a flip of gamma
     val epsilonBits = gammaBits.map { b -> if (b == '1') '0' else '1' }
 
     println(epsilonBits)
