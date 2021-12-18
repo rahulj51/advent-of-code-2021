@@ -1,5 +1,6 @@
 package aoc.d11
 
+import aoc.common.Point
 import java.io.File
 
 fun readFile(f: String): List<String> {

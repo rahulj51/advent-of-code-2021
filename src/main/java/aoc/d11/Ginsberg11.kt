@@ -1,5 +1,7 @@
 package aoc.d11
 
+import aoc.common.Point
+
 typealias OctopusCave = Map<Point, Int>
 
 class Day11(input: List<String>) {

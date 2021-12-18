@@ -1,4 +1,4 @@
-package aoc.d11
+package aoc.common
 
 data class Point(
     val x : Int,
